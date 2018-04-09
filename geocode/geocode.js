@@ -10,7 +10,7 @@ var geocodeAddress = (address, callback) => {
         },(error,response,body) => {
             // console.log("REsponse:" + JSON.stringify(error));
             // console.log(JSON.stringify(body, undefined, 2));
-            console.log(`Body: ${body.status}`);
+            // console.log(`Body: ${body.status}`);
             if(error) {
                 callback("Unable to connect to Google servers");
             } else if (body.status === 'ZERO_RESULTS') {
